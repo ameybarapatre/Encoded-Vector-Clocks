@@ -31,7 +31,7 @@ def synthesize(n , threshold = 0.5 , max =2147483647 ):
 
     vector_clock = np.zeros((n, n))
 
-    queue = np.zeros((n, 64, n))
+    queue = np.zeros((n, int(threshold*64*n), n))
 
     recv = np.zeros(n, dtype= 'int32')
 
