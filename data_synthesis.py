@@ -24,14 +24,14 @@ def prime_generator(n):
     return primes
 
 
-def synthesize(n , threshold = 0.5 , max =2147483647 ):
+def synthesize(n , sthreshold = 0.5, rthreshold = 0.5 , max =2147483647 ):
     pid = np.arange(0,n ,dtype='int32')
 
     primes = np.array(prime_generator(n))
 
     vector_clock = np.zeros((n, n))
 
-    queue = np.zeros((n, int(threshold*64*n), n))
+    queue = np.zeros((n, int(sthreshold*64*n), n))
 
     recv = np.zeros(n, dtype= 'int32')
 
@@ -41,7 +41,7 @@ def synthesize(n , threshold = 0.5 , max =2147483647 ):
 
     while np.max(evc) <= max :
 
-        if np.random.random_sample() > threshold :
+        if np.random.random_sample() > sthreshold :
             selection = np.random.choice(pid, 2, replace=False)
 
             vector_clock[selection[0]][selection[0]]+=1
@@ -53,7 +53,7 @@ def synthesize(n , threshold = 0.5 , max =2147483647 ):
 
         else:
             selection = np.random.choice(pid, 1, replace=False)
-            if recv[selection[0]]!=0 and np.random.random_sample() > threshold :
+            if recv[selection[0]]!=0 and np.random.random_sample() > rthreshold :
                  #print("Before:", vector_clock , recv, queue)
                  vector_clock[selection[0]] += np.clip(queue[selection[0]][0] - vector_clock[selection[0]] , a_min=0 ,a_max =None)
                  recv[selection[0]]-=1
