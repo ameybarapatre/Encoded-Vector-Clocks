@@ -35,10 +35,11 @@ def synthesize(n , sthreshold = 0.5, rthreshold = 0.5 , max =2147483647 ):
 
     recv = np.zeros(n, dtype= 'int32')
 
-    evc = np.prod(primes**vector_clock, axis = 1)
+    evc = np.prod(primes**vector_clock, axis = 1).astype('int64')
 
     events = 0
 
+    dataout = np.reshape( primes , (1,n))
     while np.max(evc) <= max :
 
         if np.random.random_sample() > sthreshold :
@@ -47,6 +48,7 @@ def synthesize(n , sthreshold = 0.5, rthreshold = 0.5 , max =2147483647 ):
             vector_clock[selection[0]][selection[0]]+=1
             queue[selection[1]][recv[selection[1]]] = vector_clock[selection[0]]
             recv[selection[1]] += 1
+
 
 
 
@@ -60,19 +62,24 @@ def synthesize(n , sthreshold = 0.5, rthreshold = 0.5 , max =2147483647 ):
                  queue[selection[0]][0] = np.zeros(n)
                  queue[selection[0]] = np.roll(queue[selection[0]], -1, axis=0)
                  vector_clock[selection[0]][selection[0]] += 1
+
                  #print("After:", vector_clock , recv , queue)
 
             else :
                 vector_clock[selection[0]][selection[0]] += 1
 
         evc = np.prod(primes**vector_clock , axis = 1)
-        events+=1
+        events += 1
+
+        dataout = np.append(dataout , vector_clock[selection[0]][np.newaxis,] , axis=0)
 
 
-    return np.max(vector_clock[np.argmax(evc)]),  np.sum(vector_clock[np.argmax(evc)]) , events
+    np.savetxt("./64/" + str(n)+".out", np.array(dataout, dtype = 'int64'))
+
+    return np.max(vector_clock[np.argmax(evc)]),  np.sum(vector_clock[np.argmax(evc)]) , events , evc[np.argmax(evc)]
 
 if __name__ == '__main__':
     # 9223372036854775807
     # 2147483647
-    for i in range(2,200):
+    for i in range(2,200,10):
         print(synthesize(i,0.5 ,max = 9223372036854775807))
