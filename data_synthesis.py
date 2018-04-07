@@ -1,6 +1,6 @@
 import random
 import numpy as np
-
+import mpmath as mp
 
 
 def prime_generator(n):
@@ -27,10 +27,14 @@ def prime_generator(n):
 
 
 
-def synthesize(n , sthreshold = 0.5, rthreshold = 0.5 , max =2147483647 ):
+def synthesize(n , sthreshold = 0.5, rthreshold = 0.5 , max =32):
     pid = np.arange(0,n ,dtype='int32')
 
     primes = np.array(prime_generator(n))
+
+    mp_init = np.frompyfunc(mp.fadd, 2, 1)
+    empty = np.zeros(n)
+    primes = mp_init(primes, empty)
 
     vector_clock = np.zeros((n, n))
 
@@ -38,12 +42,14 @@ def synthesize(n , sthreshold = 0.5, rthreshold = 0.5 , max =2147483647 ):
 
     recv = np.zeros(n, dtype= 'int32')
 
-    evc = np.prod(primes**vector_clock, axis = 1).astype('uint64')
+    vector_clock_m = mp_init(vector_clock , empty)
+
+    evc = np.prod(primes**vector_clock_m, axis = 1)
 
     events = 0
 
     dataout = np.reshape( primes , (1,n))
-    while np.max(evc) <= max and events < 1000 :
+    while mp.log(np.max(evc)) /mp.log(2) <= max*n :
 
         if np.random.random_sample() > sthreshold :
             selection = np.random.choice(pid, 2, replace=False)
@@ -71,37 +77,27 @@ def synthesize(n , sthreshold = 0.5, rthreshold = 0.5 , max =2147483647 ):
             else :
                 vector_clock[selection[0]][selection[0]] += 1
 
-        evc = np.prod(primes**vector_clock , axis = 1  , dtype = "uint64")
+        vector_clock_m = mp_init(vector_clock, empty)
+        evc = np.prod(primes ** vector_clock_m, axis=1)
         events += 1
         #print(np.log(np.max(evc)))
         dataout = np.append(dataout , vector_clock[np.argmax(evc)][np.newaxis,] , axis=0)
 
 
-    np.savetxt("./64/" + str(n)+".out", np.array(dataout, dtype = 'int64'))
+    np.savetxt("./Experiment 1/" + str(n)+"-64.out", np.array(dataout))
 
-    return np.max(vector_clock[np.argmax(evc)]),  np.sum(vector_clock[np.argmax(evc)]) , events , evc[np.argmax(evc)]
-
-
+    return events
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-def exp2_synthesize(n , sthreshold = 0.5, rthreshold = 0.5 , max =2147483647 ):
+def exp2_synthesize(n , sthreshold = 0.5, rthreshold = 0.5 , max = 32 ):
     pid = np.arange(0,n ,dtype='int32')
 
     primes = np.array(prime_generator(n))
+
+    mp_init = np.frompyfunc(mp.fadd, 2, 1)
+    empty = np.zeros(n)
+    primes = mp_init(primes, empty)
 
     vector_clock = np.zeros((n, n))
 
@@ -109,12 +105,14 @@ def exp2_synthesize(n , sthreshold = 0.5, rthreshold = 0.5 , max =2147483647 ):
 
     recv = np.zeros(n, dtype= 'int32')
 
-    evc = np.prod(primes**vector_clock, axis = 1).astype('uint64')
+    vector_clock_m = mp_init(vector_clock , empty)
+
+    evc = np.prod(primes**vector_clock_m, axis = 1)
 
     events = 0
 
     dataout = np.reshape( primes , (1,n))
-    while np.log(np.max(evc)) <= max and events < 1200 :
+    while mp.log(np.max(evc)) /mp.log(2) <= 1000*n and events<=1000:
 
         if np.random.random_sample() > sthreshold :
             selection = np.random.choice(pid, 2, replace=False)
@@ -142,21 +140,22 @@ def exp2_synthesize(n , sthreshold = 0.5, rthreshold = 0.5 , max =2147483647 ):
             else :
                 vector_clock[selection[0]][selection[0]] += 1
 
-        evc = np.prod(primes**vector_clock , axis = 1  , dtype = "uint64")
+        vector_clock_m = mp_init(vector_clock, empty)
+        evc = np.prod(primes ** vector_clock_m, axis=1)
         events += 1
-        #print(np.log(np.max(evc)))
+
         dataout = np.append(dataout , vector_clock[selection[0]][np.newaxis,] , axis=0)
 
 
-    np.savetxt("./Experiment 2/" + str(n)+"-1200.out", np.array(dataout, dtype = 'int64'))
+    np.savetxt("./Experiment 2/" + str(n)+"-1000.out", np.array(dataout))
 
-    return np.max(vector_clock[np.argmax(evc)]),  np.sum(vector_clock[np.argmax(evc)]) , events , evc[np.argmax(evc)]
+    return events
 
 
 
 if __name__ == '__main__':
     # 9223372036854775807
     # 2147483647
-    for i in range(2,200,10):
-        print(synthesize(i,0.5 ,max = 9223372036854775807))
-    #print(exp2_synthesize(10, 0.5, max=2147483647))
+    #for i in range(2,100,10):
+    #    print(synthesize(i,0.5 ,max = 64))
+    print(exp2_synthesize(10, 0.5, max=32))

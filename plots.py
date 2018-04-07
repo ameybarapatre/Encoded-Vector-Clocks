@@ -1,33 +1,43 @@
 import numpy as np
 import matplotlib.pyplot as plt
-
+import mpmath as mp
 def plots():
-    for i in range(2,200,10):
+    for i in range(2,100,10):
 
-        file = "./64/" + str(i) +".out"
+        file = "./Experiment 1/" + str(i) +"-64.out"
         data = np.loadtxt(file)
         primes = data[0]
         event_vectors = data[1:]
+        mp_init = np.frompyfunc(mp.fadd, 2, 1)
+        empty = np.zeros(i)
+        primes = mp_init(primes, empty)
 
-        evc = np.prod(primes**event_vectors , axis = 1 , dtype= 'int64')
+        event_vectors = mp_init(event_vectors , empty)
 
-        print(evc)
+        evc = np.prod(primes**event_vectors , axis = 1)
 
-        bits = [int(x).bit_length() for x in evc]
+        mp_log = np.frompyfunc(mp.log, 1, 1)
+
+        bits = mp_log(evc) / mp.log(2)
+
+        mp_ceil = np.frompyfunc(mp.ceil, 1, 1)
+
+        bits = mp_ceil(bits)
         print(bits)
-
         plt.plot(bits)
         plt.title(str(i)+" Processes , 64 bit")
         plt.savefig("./Plots/"+str(i)+"-64.png")
         plt.clf()
 
+
+
 def proc_plot():
-    x = [i for i in range(2,200,10)]
+    x = [i for i in range(2,100,10)]
     y=[]
 
-    for i in range(2,200,10):
+    for i in range(2,100,10):
 
-        file = "./64/" + str(i) +".out"
+        file = "./Experiment 1/" + str(i) +"-64.out"
         data = np.loadtxt(file)
         primes = data[0]
         event_vectors = data[1:]
@@ -40,4 +50,4 @@ def proc_plot():
 
 if __name__ == '__main__':
     proc_plot()
-    plots()
+    #plots()

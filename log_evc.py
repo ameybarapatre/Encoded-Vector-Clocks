@@ -4,14 +4,14 @@ import numpy as np
 import matplotlib.pyplot as plt
 from itertools import permutations
 import re
-pattern = re.compile("[0-9]+.[0]+")
+pattern = re.compile("([0-9])+\.([0])+")
 
 
-mp.dps = 800
+mp.dps = 100
 mp.pretty = True
 
 def positive_rate(n ,r):
-    file = "./Experiment 2/" + str(n)+"-" + str(r)+ ".out"
+    file = "./Experiment 2/" + "10-1000.out"
     data = np.loadtxt(file)
 
 
@@ -19,12 +19,15 @@ def positive_rate(n ,r):
     empty = np.zeros(n)
     primes = mp_init(data[0] , empty)
 
-    event_vectors = mp_init(data[1:] ,  empty)
+    event_vectors = mp_init(data[1:r] ,  empty)
 
 
 
     evc = np.prod(primes**event_vectors , axis =1)
-    logevc = [mp.log(evc[x])  for x in range(0 ,len(evc))]
+
+    mp_log = np.frompyfunc(mp.log, 1, 1)
+
+    logevc = mp_log(evc)
 
 
     idx = [x for x in range(0, len(evc))]
@@ -42,22 +45,17 @@ def positive_rate(n ,r):
 
             if logevc[pair[0]]>logevc[pair[1]]:
 
-                #print(event_vectors[pair[0]], event_vectors[pair[1]])
-                #print(logevc[pair[0]] - logevc[pair[1]])
-
                 v =mp.exp(logevc[pair[0]] - logevc[pair[1]])
 
-                # if (float(str(v)) - int(float(str(v)))) == 0.0:
-                if bool(pattern.match(str(v))):
+                if bool(pattern.match(str(v))) and len(pattern.match(str(v)).group(0)) == len(str(v)):
                     positives += 1
 
-                    #print(int(float(str(v))))
 
     print(true_positives, true_positives- positives)
 
 
 def negative_rate(n ,r):
-    file = "./Experiment 2/" + str(n)+"-" + str(r)+ ".out"
+    file = "./Experiment 2/10-1000.out"
     data = np.loadtxt(file)
 
 
@@ -65,13 +63,14 @@ def negative_rate(n ,r):
     empty = np.zeros(n)
     primes = mp_init(data[0] , empty)
 
-    event_vectors = mp_init(data[1:] ,  empty)
+    event_vectors = mp_init(data[1:r] ,  empty)
 
 
 
     evc = np.prod(primes**event_vectors , axis =1)
-    logevc = [mp.log(evc[x])  for x in range(0 ,len(evc))]
+    mp_log = np.frompyfunc(mp.log, 1, 1)
 
+    logevc = mp_log(evc)
 
     idx = [x for x in range(0, len(evc))]
     pairs = list(permutations(idx , 2))
@@ -83,59 +82,32 @@ def negative_rate(n ,r):
     for pair in pairs:
 
 
-        if np.min(event_vectors[pair[0]] - event_vectors[pair[1]])<0:
+        if np.min(event_vectors[pair[0]] - event_vectors[pair[1]])<0 and np.max(event_vectors[pair[0]] - event_vectors[pair[1]])>0:
+
             true_negatives+=1
 
             if logevc[pair[0]]>logevc[pair[1]]:
 
-                #print(event_vectors[pair[0]], event_vectors[pair[1]])
-                #print(logevc[pair[0]] - logevc[pair[1]])
-
                 v =mp.exp(logevc[pair[0]] - logevc[pair[1]])
 
-                #print(str(v))
+                if bool(pattern.match(str(v))) and len(pattern.match(str(v)).group(0)) == len(str(v)):
 
-                #if (float(str(v)) - int(float(str(v)))) == 0.0:
-                if bool(pattern.match(str(v))):
                     false_positives += 1
 
-                    #print(int(float(str(v))))
+
+            elif logevc[pair[0]]<logevc[pair[1]]:
+
+                v =mp.exp(logevc[pair[1]] - logevc[pair[0]])
+
+                if bool(pattern.match(str(v))) and len(pattern.match(str(v)).group(0)) == len(str(v)):
+
+                    false_positives += 1
+
 
     print(true_negatives, false_positives)
 
 
 
 positive_rate(10,100)
+
 negative_rate(10,100)
-print("Next:")
-
-positive_rate(10,200)
-negative_rate(10,200)
-print("Next:")
-
-
-positive_rate(10,300)
-negative_rate(10,300)
-print("Next:")
-
-
-positive_rate(10,500)
-negative_rate(10,500)
-print("Next:")
-
-
-positive_rate(10,800)
-negative_rate(10,800)
-print("Next:")
-
-
-positive_rate(10,1000)
-negative_rate(10,1000)
-print("Next:")
-
-
-positive_rate(10,1200)
-negative_rate(10,1200)
-print("Next:")
-
-

@@ -2,8 +2,55 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e83acc31-244e-431f-85c0-3fd9bdce6471" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Exp2Results.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/log_evc.py" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/32/102.out" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/32/112.out" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/32/12.out" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/32/122.out" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/32/132.out" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/32/142.out" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/32/152.out" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/32/162.out" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/32/172.out" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/32/182.out" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/32/192.out" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/32/2.out" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/32/22.out" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/32/32.out" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/32/42.out" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/32/52.out" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/32/62.out" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/32/72.out" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/32/82.out" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/32/92.out" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/32bit.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/64/102.out" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/64/112.out" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/64/12.out" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/64/122.out" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/64/132.out" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/64/142.out" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/64/152.out" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/64/162.out" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/64/172.out" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/64/182.out" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/64/192.out" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/64/2.out" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/64/22.out" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/64/32.out" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/64/42.out" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/64/52.out" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/64/62.out" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/64/72.out" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/64/82.out" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/64/92.out" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/64bit.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Exp2Results.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Experiment 2/10-100.out" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Experiment 2/10-1200.out" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Experiment 2/10-200.out" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Experiment 2/10-300.out" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Experiment 2/10-500.out" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Experiment 2/10-800.out" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/Plots/102-32.png" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/Plots/102-64.png" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/Plots/112-32.png" afterPath="" />
@@ -44,50 +91,10 @@
       <change type="DELETED" beforePath="$PROJECT_DIR$/Plots/82-64.png" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/Plots/92-32.png" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/Plots/92-64.png" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/32bit.png" afterPath="$PROJECT_DIR$/32bit.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/64bit.png" afterPath="$PROJECT_DIR$/64bit.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/32/102.out" afterPath="$PROJECT_DIR$/32/102.out" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/32/112.out" afterPath="$PROJECT_DIR$/32/112.out" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/32/12.out" afterPath="$PROJECT_DIR$/32/12.out" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/32/122.out" afterPath="$PROJECT_DIR$/32/122.out" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/32/132.out" afterPath="$PROJECT_DIR$/32/132.out" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/32/142.out" afterPath="$PROJECT_DIR$/32/142.out" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/32/152.out" afterPath="$PROJECT_DIR$/32/152.out" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/32/162.out" afterPath="$PROJECT_DIR$/32/162.out" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/32/172.out" afterPath="$PROJECT_DIR$/32/172.out" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/32/182.out" afterPath="$PROJECT_DIR$/32/182.out" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/32/192.out" afterPath="$PROJECT_DIR$/32/192.out" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/32/2.out" afterPath="$PROJECT_DIR$/32/2.out" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/32/22.out" afterPath="$PROJECT_DIR$/32/22.out" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/32/32.out" afterPath="$PROJECT_DIR$/32/32.out" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/32/42.out" afterPath="$PROJECT_DIR$/32/42.out" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/32/52.out" afterPath="$PROJECT_DIR$/32/52.out" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/32/62.out" afterPath="$PROJECT_DIR$/32/62.out" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/32/72.out" afterPath="$PROJECT_DIR$/32/72.out" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/32/82.out" afterPath="$PROJECT_DIR$/32/82.out" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/32/92.out" afterPath="$PROJECT_DIR$/32/92.out" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/64/102.out" afterPath="$PROJECT_DIR$/64/102.out" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/64/112.out" afterPath="$PROJECT_DIR$/64/112.out" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/64/12.out" afterPath="$PROJECT_DIR$/64/12.out" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/64/122.out" afterPath="$PROJECT_DIR$/64/122.out" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/64/132.out" afterPath="$PROJECT_DIR$/64/132.out" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/64/142.out" afterPath="$PROJECT_DIR$/64/142.out" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/64/152.out" afterPath="$PROJECT_DIR$/64/152.out" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/64/162.out" afterPath="$PROJECT_DIR$/64/162.out" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/64/172.out" afterPath="$PROJECT_DIR$/64/172.out" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/64/182.out" afterPath="$PROJECT_DIR$/64/182.out" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/64/192.out" afterPath="$PROJECT_DIR$/64/192.out" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/64/2.out" afterPath="$PROJECT_DIR$/64/2.out" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/64/22.out" afterPath="$PROJECT_DIR$/64/22.out" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/64/32.out" afterPath="$PROJECT_DIR$/64/32.out" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/64/42.out" afterPath="$PROJECT_DIR$/64/42.out" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/64/52.out" afterPath="$PROJECT_DIR$/64/52.out" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/64/62.out" afterPath="$PROJECT_DIR$/64/62.out" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/64/72.out" afterPath="$PROJECT_DIR$/64/72.out" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/64/82.out" afterPath="$PROJECT_DIR$/64/82.out" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/64/92.out" afterPath="$PROJECT_DIR$/64/92.out" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Experiment 2/10-1000.out" afterPath="$PROJECT_DIR$/Experiment 2/10-1000.out" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data_synthesis.py" afterPath="$PROJECT_DIR$/data_synthesis.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/log_evc.py" afterPath="$PROJECT_DIR$/log_evc.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plots.py" afterPath="$PROJECT_DIR$/plots.py" />
     </list>
     <ignored path="EncodedVectorClocks.iws" />
@@ -111,8 +118,8 @@
       <file leaf-file-name="plots.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/plots.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-59">
-              <caret line="3" column="12" selection-start-line="3" selection-start-column="12" selection-end-line="3" selection-end-column="12" />
+            <state relative-caret-position="140">
+              <caret line="20" column="15" selection-start-line="20" selection-start-column="15" selection-end-line="20" selection-end-column="26" />
               <folding>
                 <element signature="e#0#18#0" expanded="true" />
               </folding>
@@ -123,26 +130,12 @@
       <file leaf-file-name="log_evc.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/log_evc.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="647">
-              <caret line="141" column="0" selection-start-line="141" selection-start-column="0" selection-end-line="141" selection-end-column="0" />
+            <state relative-caret-position="135">
+              <caret line="9" column="11" selection-start-line="9" selection-start-column="11" selection-end-line="9" selection-end-column="11" />
               <folding>
                 <element signature="e#0#19#0" expanded="true" />
               </folding>
             </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="32bit.png" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/32bit.png">
-          <provider selected="true" editor-type-id="images">
-            <state />
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="64bit.png" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/64bit.png">
-          <provider selected="true" editor-type-id="images">
-            <state />
           </provider>
         </entry>
       </file>
@@ -162,10 +155,10 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/error_rate.py" />
+        <option value="$PROJECT_DIR$/Exp2Results.txt" />
         <option value="$PROJECT_DIR$/data_synthesis.py" />
         <option value="$PROJECT_DIR$/plots.py" />
         <option value="$PROJECT_DIR$/log_evc.py" />
-        <option value="$PROJECT_DIR$/Exp2Results.txt" />
       </list>
     </option>
   </component>
@@ -200,6 +193,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -218,23 +212,8 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="EncodedVectorClocks" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="EncodedVectorClocks" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Experiment 2" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
       <pane id="Scope" />
     </panes>
   </component>
@@ -467,12 +446,12 @@
     <frame x="63" y="24" width="1303" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24453124" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2859375" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3287037" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.47678018" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.31733745" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -518,53 +497,11 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="1" />
+      <option name="time" value="2" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/plots.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="0" selection-start-line="6" selection-start-column="7" selection-end-line="10" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#18#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/log_evc.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#19#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data_synthesis.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="435">
-          <caret line="30" column="0" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#13#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data_synthesis.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#13#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/12.out" />
-    <entry file="file://$PROJECT_DIR$/2.out" />
     <entry file="file://$PROJECT_DIR$/32/12.out">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -638,29 +575,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Experiment 2/100.out" />
     <entry file="file://$PROJECT_DIR$/Experiment 2/2.out" />
-    <entry file="file://$PROJECT_DIR$/Experiment 2/30.out">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-14811">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Experiment 2/10-1000.out">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-14503">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Experiment 2/20.out">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/Experiment 2/30.out" />
+    <entry file="file://$PROJECT_DIR$/Experiment 2/20.out" />
     <entry file="file://$PROJECT_DIR$/Plots/192-32.png">
       <provider selected="true" editor-type-id="images">
         <state />
@@ -670,7 +586,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-17811">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -678,7 +593,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-247">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -686,23 +600,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-497">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data_synthesis.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="244">
-          <caret line="79" column="20" selection-start-line="79" selection-start-column="20" selection-end-line="79" selection-end-column="20" />
-          <folding>
-            <element signature="e#0#13#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Plots/12-32.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Plots/102-32.png">
@@ -725,7 +623,69 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Plots/2-32.png">
+    <entry file="file://$PROJECT_DIR$/Experiment 2/10-100.out">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Experiment 1/12-32.out">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Experiment 1/2-64.out">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1762">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Exp2Results.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="278">
+          <caret line="21" column="0" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Experiment 2/10-1000.out">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Experiment 1/2-32.out">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-922">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Plots/22-32.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Plots/32-32.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Plots/52-32.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Plots/12-32.png">
       <provider selected="true" editor-type-id="images">
         <state />
       </provider>
@@ -740,22 +700,25 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/plots.py">
+    <entry file="file://$PROJECT_DIR$/32bit.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data_synthesis.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-59">
-          <caret line="3" column="12" selection-start-line="3" selection-start-column="12" selection-end-line="3" selection-end-column="12" />
+        <state relative-caret-position="377">
+          <caret line="92" column="72" selection-start-line="92" selection-start-column="72" selection-end-line="92" selection-end-column="72" />
           <folding>
-            <element signature="e#0#18#0" expanded="true" />
+            <element signature="e#0#13#0" expanded="true" />
+            <element signature="e#2455#4348#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Experiment 2/10-100.out">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
+    <entry file="file://$PROJECT_DIR$/Plots/2-32.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/64bit.png">
@@ -763,23 +726,20 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/32bit.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Exp2Results.txt">
+    <entry file="file://$PROJECT_DIR$/plots.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="21" column="0" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
-          <folding />
+        <state relative-caret-position="140">
+          <caret line="20" column="15" selection-start-line="20" selection-start-column="15" selection-end-line="20" selection-end-column="26" />
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/log_evc.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="647">
-          <caret line="141" column="0" selection-start-line="141" selection-start-column="0" selection-end-line="141" selection-end-column="0" />
+        <state relative-caret-position="135">
+          <caret line="9" column="11" selection-start-line="9" selection-start-column="11" selection-end-line="9" selection-end-column="11" />
           <folding>
             <element signature="e#0#19#0" expanded="true" />
           </folding>
