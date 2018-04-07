@@ -48,6 +48,26 @@ def proc_plot():
     plt.savefig("64bit.png")
     plt.clf()
 
+
+
+def prob_plot():
+    x = [0.0 , 0.3,0.5,0.6,0.8, 0.9,1.0]
+    y=[]
+
+    for i in x:
+
+        file = "./Experiment 1A/10-" + str(i) +".out"
+        data = np.loadtxt(file)
+        primes = data[0]
+        event_vectors = data[1:]
+        y.append(len(event_vectors))
+
+    plt.plot(x,y)
+    plt.title("Probability vs Number of Events")
+    plt.savefig("64prob.png")
+    plt.clf()
+
+
 if __name__ == '__main__':
-    proc_plot()
+    prob_plot()
     #plots()

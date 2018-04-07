@@ -38,7 +38,7 @@ def synthesize(n , sthreshold = 0.5, rthreshold = 0.5 , max =32):
 
     vector_clock = np.zeros((n, n))
 
-    queue = np.zeros((n, int(sthreshold*64*n), n))
+    queue = np.zeros((n, int(64*n), n))
 
     recv = np.zeros(n, dtype= 'int32')
 
@@ -157,5 +157,5 @@ if __name__ == '__main__':
     # 9223372036854775807
     # 2147483647
     #for i in range(2,100,10):
-    #    print(synthesize(i,0.5 ,max = 64))
-    print(exp2_synthesize(10, 0.5, max=32))
+       print(synthesize(10 ,max = 64))
+    #print(exp2_synthesize(10, 0.5, max=32))
