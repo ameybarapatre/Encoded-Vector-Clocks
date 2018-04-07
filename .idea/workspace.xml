@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="e83acc31-244e-431f-85c0-3fd9bdce6471" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data_synthesis.py" afterPath="$PROJECT_DIR$/data_synthesis.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plots.py" afterPath="$PROJECT_DIR$/plots.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/log_evc.py" afterPath="$PROJECT_DIR$/log_evc.py" />
     </list>
     <ignored path="EncodedVectorClocks.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -23,26 +23,13 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="plots.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/plots.py">
+      <file leaf-file-name="log_evc.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/log_evc.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="96">
-              <caret line="53" column="18" selection-start-line="53" selection-start-column="18" selection-end-line="53" selection-end-column="18" />
+            <state relative-caret-position="307">
+              <caret line="112" column="15" selection-start-line="112" selection-start-column="15" selection-end-line="112" selection-end-column="15" />
               <folding>
-                <element signature="e#0#18#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="data_synthesis.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/data_synthesis.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="159" column="38" selection-start-line="159" selection-start-column="38" selection-end-line="159" selection-end-column="38" />
-              <folding>
-                <element signature="e#0#13#0" expanded="true" />
-                <element signature="e#2444#4337#0" expanded="false" />
+                <element signature="e#0#19#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -65,9 +52,9 @@
       <list>
         <option value="$PROJECT_DIR$/error_rate.py" />
         <option value="$PROJECT_DIR$/Exp2Results.txt" />
-        <option value="$PROJECT_DIR$/log_evc.py" />
-        <option value="$PROJECT_DIR$/data_synthesis.py" />
         <option value="$PROJECT_DIR$/plots.py" />
+        <option value="$PROJECT_DIR$/data_synthesis.py" />
+        <option value="$PROJECT_DIR$/log_evc.py" />
       </list>
     </option>
   </component>
@@ -130,7 +117,7 @@
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
   </component>
-  <component name="RunManager" selected="Python.error_rate">
+  <component name="RunManager" selected="Python.log_evc">
     <configuration default="false" name="data_synthesis" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -323,9 +310,9 @@
     </list>
     <recent_temporary>
       <list size="3">
-        <item index="0" class="java.lang.String" itemvalue="Python.error_rate" />
+        <item index="0" class="java.lang.String" itemvalue="Python.log_evc" />
         <item index="1" class="java.lang.String" itemvalue="Python.data_synthesis" />
-        <item index="2" class="java.lang.String" itemvalue="Python.log_evc" />
+        <item index="2" class="java.lang.String" itemvalue="Python.error_rate" />
       </list>
     </recent_temporary>
   </component>
@@ -406,13 +393,18 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="2" />
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/data_synthesis.py</url>
+          <line>92</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+      <option name="time" value="3" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Plots/62.png" />
-    <entry file="file://$PROJECT_DIR$/Plots/72.png" />
     <entry file="file://$PROJECT_DIR$/Plots/82.png" />
     <entry file="file://$PROJECT_DIR$/Plots/92.png" />
     <entry file="file://$PROJECT_DIR$/Plots/102.png" />
@@ -605,17 +597,27 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Experiment 1A/10-0.6.out">
+    <entry file="file://$PROJECT_DIR$/plots.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-5184">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+        <state relative-caret-position="96">
+          <caret line="53" column="18" selection-start-line="53" selection-start-column="18" selection-end-line="53" selection-end-column="18" />
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Experiment 1A/10-0.5.out">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-5694">
+        <state relative-caret-position="-5708">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Experiment 1A/10-0.6.out">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
@@ -629,17 +631,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Experiment 1A/10-1.0.out">
+    <entry file="file://$PROJECT_DIR$/Experiment 1A/10-0.9.out">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-20934">
+        <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Experiment 1A/10-0.0.out">
+    <entry file="file://$PROJECT_DIR$/Experiment 1A/10-1.0.out">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-18669">
+        <state relative-caret-position="-20948">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
@@ -647,19 +649,17 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Experiment 1A/10-0.3.out">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-7118">
+        <state relative-caret-position="-8124">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/log_evc.py">
+    <entry file="file://$PROJECT_DIR$/Experiment 1A/10-0.0.out">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="11" selection-start-line="9" selection-start-column="11" selection-end-line="9" selection-end-column="11" />
-          <folding>
-            <element signature="e#0#19#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="-17739">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -668,23 +668,30 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/plots.py">
+    <entry file="file://$PROJECT_DIR$/Experiment 2/40-1000.out">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="96">
-          <caret line="53" column="18" selection-start-line="53" selection-start-column="18" selection-end-line="53" selection-end-column="18" />
-          <folding>
-            <element signature="e#0#18#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="-14723">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/data_synthesis.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="159" column="38" selection-start-line="159" selection-start-column="38" selection-end-line="159" selection-end-column="38" />
+        <state relative-caret-position="321">
+          <caret line="160" column="27" selection-start-line="160" selection-start-column="27" selection-end-line="160" selection-end-column="27" />
           <folding>
             <element signature="e#0#13#0" expanded="true" />
-            <element signature="e#2444#4337#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/log_evc.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="307">
+          <caret line="112" column="15" selection-start-line="112" selection-start-column="15" selection-end-line="112" selection-end-column="15" />
+          <folding>
+            <element signature="e#0#19#0" expanded="true" />
           </folding>
         </state>
       </provider>

@@ -11,7 +11,7 @@ mp.dps = 100
 mp.pretty = True
 
 def positive_rate(n ,r):
-    file = "./Experiment 2/" + "10-1000.out"
+    file = "./Experiment 2/" + str(n)+"-1000.out"
     data = np.loadtxt(file)
 
 
@@ -55,7 +55,7 @@ def positive_rate(n ,r):
 
 
 def negative_rate(n ,r):
-    file = "./Experiment 2/10-1000.out"
+    file = "./Experiment 2/"+str(n)+"-1000.out"
     data = np.loadtxt(file)
 
 
@@ -108,6 +108,6 @@ def negative_rate(n ,r):
 
 
 
-positive_rate(10,100)
+positive_rate(50,100)
 
-negative_rate(10,100)
+negative_rate(50,100)

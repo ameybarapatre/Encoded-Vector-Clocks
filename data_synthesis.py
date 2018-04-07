@@ -157,5 +157,5 @@ if __name__ == '__main__':
     # 9223372036854775807
     # 2147483647
     #for i in range(2,100,10):
-       print(synthesize(10 ,max = 64))
-    #print(exp2_synthesize(10, 0.5, max=32))
+      # print(synthesize(10 ,max = 64))
+    print(exp2_synthesize(50, 0.5, max=32))
