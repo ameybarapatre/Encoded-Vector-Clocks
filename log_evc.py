@@ -108,6 +108,6 @@ def negative_rate(n ,r):
 
 
 
-positive_rate(50,100)
+positive_rate(10,100)
 
-negative_rate(50,100)
+negative_rate(10,100)
