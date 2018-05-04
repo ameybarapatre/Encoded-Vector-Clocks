@@ -7,7 +7,7 @@ import re
 pattern = re.compile("([0-9])+\.([0])+")
 
 
-mp.dps = 100
+mp.dps = 256
 mp.pretty = True
 
 def positive_rate(n ,r):
@@ -108,6 +108,6 @@ def negative_rate(n ,r):
 
 
 
-positive_rate(10,100)
+positive_rate(40,200)
 
-negative_rate(10,100)
+negative_rate(40,200)
